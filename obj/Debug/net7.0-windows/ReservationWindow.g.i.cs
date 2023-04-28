@@ -61,7 +61,7 @@ namespace FrontDesk {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FrontDesk;component/reservationwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FrontDesk;V1.0.0.0;component/reservationwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ReservationWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
