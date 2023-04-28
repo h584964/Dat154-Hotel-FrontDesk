@@ -1,0 +1,58 @@
+﻿<Window x:Class="FrontDesk.AddReservationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrontDesk"
+        mc:Ignorable="d"
+        Title="AddReservationWindow" Height="450" Width="800">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="105"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="First Name:" VerticalAlignment="Center" Height="16"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Name="FirstNameTextBox" Margin="5,5,5,5"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Last Name:" VerticalAlignment="Center" Height="16"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="LastNameTextBox" Margin="5,5,5,5"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Email:" VerticalAlignment="Center" Height="16"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Name="EmailTextBox" Margin="5,5,5,5"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Phone Number:" VerticalAlignment="Center" Height="16"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Name="PhoneNumberTextBox" Margin="5,5,5,5"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Room Number:" VerticalAlignment="Center" Height="16"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Name="RoomNumberTextBox" Margin="5,5,5,5"/>
+
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Check-In Date:" VerticalAlignment="Center" Height="16"/>
+        <DatePicker Grid.Row="5" Grid.Column="1" Name="CheckInDatePicker" Margin="5,5,5,5"/>
+
+        <TextBlock Grid.Row="6" Grid.Column="0" Text="Check-Out Date:" VerticalAlignment="Center" Height="16"/>
+        <DatePicker Grid.Row="6" Grid.Column="1" Name="CheckOutDatePicker" Margin="5,5,5,5"/>
+
+        <TextBlock Grid.Row="7" Grid.Column="0" Text="Number of Guests:" VerticalAlignment="Center" Height="16"/>
+        <TextBox Grid.Row="7" Grid.Column="1" Name="NumberOfGuestsTextBox" Margin="5,5,5,5"/>
+
+        <TextBlock Grid.Row="8" Grid.Column="0" Text="Total Price:" VerticalAlignment="Center" Height="16"/>
+        <TextBox Grid.Row="8" Grid.Column="1" Name="TotalPriceTextBox" Margin="5,5,5,5"/>
+
+        <Button Grid.Row="9" Content="Add Reservation" Margin="562,10,0,100" Click="AddReservation_Click" HorizontalAlignment="Left" Grid.Column="1" Width="90"/>
+
+    </Grid>
+</Window>
