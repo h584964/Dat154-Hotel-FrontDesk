@@ -10,6 +10,9 @@
     <Compile Update="AddReservationWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="EditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ReservationWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,6 +22,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="AddReservationWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

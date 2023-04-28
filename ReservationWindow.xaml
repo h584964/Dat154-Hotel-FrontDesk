@@ -8,20 +8,21 @@
         Title="ReservationWindow" Height="450" Width="800">
     <Grid Margin="0,0,0,-16">
         <DataGrid x:Name="booking" ItemsSource="{Binding}" Margin="0,44,0,0" AutoGenerateColumns="False">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Width="250" Header="Booking ID" Binding="{Binding BookingId}" />
-                    <DataGridTextColumn Width="250" Header="Customer ID" Binding="{Binding CustomerId}" />
-                    <DataGridTextColumn Width="100" Header="Room Number" Binding="{Binding RoomNumber}"/>
-                    <DataGridTextColumn Width="200" Header="Check-In" Binding="{Binding CheckInDate}"/>
-                    <DataGridTextColumn Width="200" Header="Check-Out" Binding="{Binding CheckOutDate}"/>
-                    <DataGridTextColumn Width="100" Header="Guests" Binding="{Binding NumberOfGuests}"/>
-                    <DataGridTextColumn Width="100" Header="Total Price" Binding="{Binding TotalPrice}"/>
-                </DataGrid.Columns>
-            </DataGrid>
-        <Button Content="Show Reservations" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" Click="AddReservationWindow_ReservationAdded"/>
-            <Button Content="Add Reservation" HorizontalAlignment="Left" Margin="200,10,0,0" VerticalAlignment="Top" Click="AddReservation_Click"/>
-            <Button Content="Delete Reservation" HorizontalAlignment="Left" Margin="350,10,0,0" VerticalAlignment="Top" Click="DeleteReservation_Click"/>
-            <Button Content="Back" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10,10,10,0" Click="BackButton_Click"/>
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="250" Header="Booking ID" Binding="{Binding BookingId}" Foreground="DarkSlateBlue"/>
+                <DataGridTextColumn Width="250" Header="Customer ID" Binding="{Binding CustomerId}" Foreground="DarkSlateBlue" />
+                <DataGridTextColumn Width="100" Header="Room Number" Binding="{Binding RoomNumber}" Foreground="DarkSlateBlue"/>
+                <DataGridTextColumn Width="200" Header="Check-In" Binding="{Binding CheckInDate}" Foreground="DarkSlateBlue"/>
+                <DataGridTextColumn Width="200" Header="Check-Out" Binding="{Binding CheckOutDate}" Foreground="DarkSlateBlue"/>
+                <DataGridTextColumn Width="100" Header="Guests" Binding="{Binding NumberOfGuests}" Foreground="DarkSlateBlue"/>
+                <DataGridTextColumn Width="100" Header="Total Price" Binding="{Binding TotalPrice}" Foreground="DarkSlateBlue"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Show Reservations" HorizontalAlignment="Left" Margin="17,10,0,0" VerticalAlignment="Top" Click="AddReservationWindow_ReservationAdded" Foreground="White" Background="SkyBlue"/>
+        <Button Content="Add Reservation" HorizontalAlignment="Left" Margin="133,10,0,0" VerticalAlignment="Top" Click="AddReservation_Click" Foreground="White" Background="SkyBlue"/>
+        <Button Content="Delete Reservation" HorizontalAlignment="Left" Margin="238,10,0,0" VerticalAlignment="Top" Click="DeleteReservation_Click" Foreground="White" Background="SkyBlue"/>
+        <Button Content="Edit Reservation" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Click="EditReservation_Click" Foreground="White" Background="SkyBlue"/>
+        <Button Content="Back" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10,10,10,0" Click="BackButton_Click" Foreground="White" Background="LightPink"/>
 
     </Grid>
 </Window>

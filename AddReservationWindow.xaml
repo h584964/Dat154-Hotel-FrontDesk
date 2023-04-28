@@ -52,7 +52,7 @@
         <TextBlock Grid.Row="8" Grid.Column="0" Text="Total Price:" VerticalAlignment="Center" Height="16"/>
         <TextBox Grid.Row="8" Grid.Column="1" Name="TotalPriceTextBox" Margin="5,5,5,5"/>
 
-        <Button Grid.Row="9" Content="Add Reservation" Margin="562,10,0,100" Click="AddReservation_Click" HorizontalAlignment="Left" Grid.Column="1" Width="90"/>
+        <Button Grid.Row="9" Content="Add Reservation" Margin="562,10,0,100" Click="AddReservation_Click" HorizontalAlignment="Left" Grid.Column="1" Width="90" Foreground="White" Background="SkyBlue"/>
 
     </Grid>
 </Window>

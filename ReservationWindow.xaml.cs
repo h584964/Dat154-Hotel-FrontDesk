@@ -96,5 +96,29 @@ namespace FrontDesk
             mainWindow.Show();
             this.Close();
         }
+
+        private void EditReservation_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedReservation = booking.SelectedItem as Booking;
+            if (selectedReservation != null)
+            {
+                // Åpne en ny dialog for å redigere den valgte reservasjonen.
+                // Du må lage en ny Window (f.eks. EditReservationWindow) som lar brukeren redigere reservasjonen.
+                var editReservationWindow = new EditWindow(selectedReservation);
+                if (editReservationWindow.ShowDialog() == true)
+                {
+                    // Oppdater databasen med endringene i reservasjonen.
+                    dx.SaveChanges();
+
+                    // Oppdater reservasjonslisten.
+                    ShowReservation();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a reservation to edit.");
+            }
+
+        }
     }
 }

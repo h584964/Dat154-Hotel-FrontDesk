@@ -17,9 +17,9 @@
                 <DatePicker x:Name="StartDatePicker" />
                 <TextBlock Text="to: " VerticalAlignment="Center" />
                 <DatePicker x:Name="EndDatePicker" />
-                <Button Content="Show Available Rooms" Margin="10,0,0,0" Click="ShowAvailableRooms_Click" />
-                <Button Content="Reserve Room" Margin="10,0,0,0" Click="ReserveRoom_Click" />
-                <Button Content="Back" Margin="150,0,0,0" Click="BackButton_Click"/>
+            <Button Content="Show Available Rooms" Margin="10,0,0,0" Click="ShowAvailableRooms_Click" Foreground="White" Background="SkyBlue" />
+            <Button Content="Reserve Room" Margin="10,0,0,0" Click="ReserveRoom_Click" Foreground="White" Background="SkyBlue" />
+            <Button Content="Back" Margin="150,0,0,0" Click="BackButton_Click" Foreground="White" Background="LightPink"/>
         </StackPanel>
 
             <DataGrid x:Name="RoomsDataGrid" Grid.Row="1" Margin="0,0,0,0" AutoGenerateColumns="False">
